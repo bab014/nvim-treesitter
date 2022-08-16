@@ -204,3 +204,11 @@
 (comment) @comment
 
 (ERROR) @error
+
+(short_var_declaration 
+  left: (expression_list
+          (identifier) @definition.var))
+
+(var_declaration 
+  (var_spec
+    name: (identifier) @definition.var))
